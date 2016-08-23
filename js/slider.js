@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  var countContent = $(".row-slider").children(".content-slider").length;
+  var countContent = $(".row-slider").children("article").length;
   var widthRowSlider = (countContent * 100);
   var widthContent = widthRowSlider / countContent / countContent;
 
   $(".slider").children(".row-slider").css("width", widthRowSlider + "%");
-  $(".row-slider").children(".content-slider").css("width", widthContent + "%");
+  $(".row-slider").children("article").css("width", widthContent + "%");
 
   function moveLeft(){
     $(".row-slider").animate({left: "+=100%"});
