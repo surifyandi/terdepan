@@ -73,7 +73,7 @@
 /*big news*/
 
 article.big-news figure{
-  height: 233px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -99,7 +99,6 @@ article.big-news figcaption a:hover{
 
 article.big-news figcaption .meta{
   font-size: 12px;
-  margin-bottom: 10px;
   font-weight: 700;
 }
 
@@ -118,7 +117,11 @@ article.big-news figcaption .meta .date{
 
 article.big-news figcaption{
   font-size: 14px;
-  line-height: 22px;
+  line-height: 24px;
+}
+
+article.big-news p{
+  margin-top: 10px;
 }
 
 /*end of big news*/
@@ -136,15 +139,14 @@ article.big-news figcaption{
 }
 
 .small-article article figure{
-  width: 124px;
-  height: 80px;
+  width: 100%;
   overflow: hidden;
-  float: left;
-  margin-right: 15px;
 }
 
 .small-article article figure img{
-  width: 100%;
+  width: 124px;
+  float: left;
+  margin-right: 15px;
 }
 
 .small-article article figcaption h4{
@@ -183,6 +185,58 @@ article.big-news figcaption{
 /*end of small news*/
 
 /*end of component*/
+
+/*contextual class*/
+
+/*margin top small*/
+.mt-sm{ margin-top: 5px; }
+
+/*margin top medium*/
+.mt-md{ margin-top: 15px; }
+
+/*margin top large*/
+.mt-lg{ margin-top: 30px; }
+
+/*margin top extra large*/
+.mt-xl{ margin-top: 60px; }
+
+/*margin bottom small*/
+.mb-sm{ margin-bottom: 5px; }
+
+/*margin bottom medium*/
+.mb-md{ margin-bottom: 15px; }
+
+/*margin bottom large*/
+.mb-lg{ margin-bottom: 30px; }
+
+/*margin bottom extra large*/
+.mb-xl{ margin-bottom: 60px; }
+
+/*margin left small*/
+.ml-sm{ margin-left: 5px; }
+
+/*margin left medium*/
+.ml-md{ margin-left: 15px; }
+
+/*margin left large*/
+.ml-lg{ margin-left: 30px; }
+
+/*margin left extra large*/
+.ml-xl{ margin-left: 60px; }
+
+/*margin right small*/
+.mr-sm{ margin-right: 5px; }
+
+/*margin right medium*/
+.mr-md{ margin-right: 15px; }
+
+/*margin right large*/
+.mr-lg{ margin-right: 30px; }
+
+/*margin right extra large*/
+.mr-xl{ margin-right: 60px; }
+
+/*end of contextual class*/
 
 /*header*/
 
@@ -348,6 +402,15 @@ nav.main-navigation ul li.dropdown section:before{
   color: #333;
 }
 
+.dropdown section .row-dropdown .group-news .more-news{
+  display: block;
+  margin: 10px 0;
+}
+
+.dropdown section .row-dropdown .group-news .more-news .fa{
+  margin-top: 7px;
+}
+
 nav.main-navigation ul li.active{
   border-bottom: 3px solid #1abc9c;
 }
@@ -369,6 +432,155 @@ nav.main-navigation ul li a:hover{
   text-decoration: none;
   color: #1abc9c;
 }
+
+/*login*/
+
+section.login{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, .9);
+  top: 0;
+  z-index: 99999;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+section.login .close-button{
+  position: absolute;
+  color: #fff;
+  top: 0;
+  z-index: 99999;
+  font-size: 24px;
+  top: 15px;
+  right: 20px;
+}
+
+section.login .close-button:hover{
+  cursor: pointer;
+}
+
+section.login.active{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+section.login .wrapper-login{
+  position: absolute;
+  width: 360px;
+  min-height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px;
+  padding: 50px 70px;
+  text-align: center;
+}
+
+section.login .wrapper-login h2{
+  font-size: 26px;
+  color: #1abc9c;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+section.login .wrapper-login span{
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: block;
+}
+
+section.login .wrapper-login .socmed-btn{
+  margin-bottom: 20px;
+}
+
+section.login .wrapper-login .socmed-btn .btn{
+  padding: 6px 13px;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+section.login .wrapper-login .socmed-btn .btn:last-child{
+  margin-right: 0;
+}
+
+section.login .wrapper-login .socmed-btn .btn.fb{
+  background: #3b5998;
+}
+
+section.login .wrapper-login .socmed-btn .btn.gp{
+  background: #dd4b39;
+}
+
+section.login .wrapper-login form {
+  margin-bottom: 20px;
+}
+
+section.login .wrapper-login form input,
+section.login .wrapper-login form button{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+section.login .wrapper-login form input{
+  border: 1px solid #ddd;
+}
+
+section.login .wrapper-login form button{
+  background: #1abc9c;
+  color: #fff;
+  border: 0;
+}
+
+section.login .wrapper-login .etc-link{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+section.login .wrapper-login .etc-link li{
+  display: block;
+  margin-bottom: 5px;
+}
+
+section.login .wrapper-login .etc-link li:last-child{
+  margin-bottom: 0;
+}
+
+section.login .wrapper-login .etc-link li a{
+  font-size: 13px;
+}
+
+section.login .wrapper-login .etc-link li:first-child a{
+  color: #999;
+}
+
+section.login .wrapper-login .etc-link li:last-child a{
+  color: #1abc9c;
+}
+
+/*end of login*/
 
 /*end of header*/
 
@@ -417,7 +629,7 @@ nav.main-navigation ul li a:hover{
 .headline .control{
   background: #f1f1f1;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   position: absolute;
   right: 0;
   top: 0;
@@ -579,7 +791,6 @@ nav.main-navigation ul li a:hover{
   position: relative;
   width: 100%;
   display: block;
-  margin-bottom: 30px;
 }
 
 .tab-news:before{
@@ -638,7 +849,8 @@ nav.main-navigation ul li a:hover{
   width: 300px;
   height: 250px;
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ads-square figure a img{
@@ -654,7 +866,7 @@ nav.main-navigation ul li a:hover{
   height: 90px;
   display: block;
   margin: auto;
-  margin: 20px 0 50px 0;
+  margin: 60px 0;
 }
 
 /*end of adsense 728x90*/
@@ -707,6 +919,129 @@ nav.main-navigation ul li a:hover{
 }
 
 /*end of newsletter*/
+
+/*news category*/
+
+.news-category ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-category ul li{
+  display: block;
+  margin-bottom: 15px;
+}
+
+.news-category ul li a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.news-category ul li a .fa{
+  font-size: 10px;
+  color: #1abc9c;
+}
+
+.news-category ul li a:hover{
+  text-decoration: none;
+  color: #1abc9c;
+}
+
+
+.news-category ul li .view{
+  font-size: 13px;
+  color: #999;
+}
+
+/*end of news category*/
+
+/*top users*/
+
+.top-users ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.top-users ul li {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.top-users ul li figure img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.top-users ul li figure figcaption{
+  display: inline-block;
+}
+
+.top-users ul li figure figcaption h5.name{
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.top-users ul li figure figcaption span.post-count{
+  font-size: 13px;
+  color: #999;
+}
+
+.top-users ul li a{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #1abc9c;
+}
+
+footer{
+  background: #f1f1f1;
+  padding: 30px 0;
+  -webkit-box-shadow: 1px 0 4px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 1px 0 4px rgba(0, 0, 0, .3);
+  -ms-box-shadow: 1px 0 4px rgba(0, 0, 0, .3);
+  -o-box-shadow: 1px 0 4px rgba(0, 0, 0, .3);
+  box-shadow: 1px 0 4px rgba(0, 0, 0, .3);
+}
+
+footer .describe{
+  border-left: 4px solid #1abc9c;
+  padding-left: 15px;
+  line-height: 22px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+footer .copyright{
+  color: #999;
+  font-size: 13px;
+}
+
+footer .related-link{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+footer .related-link li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer .related-link li:last-child{
+  margin-right: 0;
+}
+
+footer .related-link li a{
+  font-size: 13px;
+  color: #999;
+}
+
+/*end of top users*/
 
 @media (max-width: 1199px){
   nav.main-navigation ul li.sign-in{

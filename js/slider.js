@@ -12,6 +12,11 @@ $(document).ready(function(){
 
   function moveRight(){
     $(".row-slider").animate({left: "-=100%"});
+    var cek=document.getElementsByClassName('row-slider').childNodes;
+    // // var cek=document.getElementsByClassName('slider').sidemenu.childNodes.length;
+    // console.log(cek);
+    // // var cek=$(".row-slider").is(':last-child')
+    // // console.log(cek);
   }
 
   $(".nav-left").click(function(){

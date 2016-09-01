@@ -13,8 +13,10 @@ $(document).ready(function(){
       $(this).parents(".dropdown").addClass("active");
     }
 
-    var heightContent = $(".row-dropdown .group-news").innerHeight();
+    var heightContent = $(".body-dropdown").find(".group-news").innerHeight();
     $(".body-dropdown").css("height", heightContent + "px");
+
     event.preventDefault();
+
   });
 })
