@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,8 +19,12 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-    <!-- custom bootstrap -->
-    <link rel="stylesheet" href="css/custom-bootstrap.css" type="text/css" />
+    <!-- component -->
+    <link rel="stylesheet" href="css/component.css" type="text/css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
 
   </head>
   <body>
@@ -32,19 +37,17 @@
             <!-- logo -->
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <ul class="socmed pull-right">
+            <ul class="socmed">
               <li class="title">follow us : </li>
               <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
               <li class="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li class="ig"><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
-            <form class="search pull-right" method="post">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" name="search" placeholder="cari berita di sini" class="form-control"/>
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
+            <form class="search" method="post">
+              <div class="search-form">
+                <input type="text" name="" placeholder="cari berita di sini" />
+                <div class="button">
+                  <button><i class="fa fa-search"></i></button>
                 </div>
               </div>
             </form>
@@ -53,425 +56,446 @@
             <nav class="main-navigation">
               <ul>
                 <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="link-death">Kesehatan</a>
+                <li class="megamenu">
+                  <a href="#">Kesehatan <i class="fa fa-caret-down"></i></a>
+                  <ul>
+                    <li class="active">
+                      <a href="#">Tips Kesehatan</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
 
-                  <!-- dropdown -->
-                  <section class="body-dropdown">
-                    <div class="row-dropdown active">
-                      <h5 class="nav-dropdown">Tips Kesehatan</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
                           <article>
                             <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
                             </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
                           </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-2.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-3.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-4.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Informasi Kesehatan</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-5.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-6.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-8.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Pola Hidup</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-10.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-9.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-8.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Penyakit</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-4.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-3.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-12.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Kesehatan Dunia</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-14.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-5.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </section>
-                  <!-- end of dropdown -->
 
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Informasi Kesehatan</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Prestasi</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                          
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Konsultasi</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Pola Hidup</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                  </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="link-death">Kesehatan</a>
+                <li class="megamenu">
+                  <a href="#">Tips & Trik <i class="fa fa-caret-down"></i></a>
+                  <ul>
+                    <li class="active">
+                      <a href="#">Informasi Kesehatan</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
 
-                  <!-- dropdown -->
-                  <section class="body-dropdown">
-                    <div class="row-dropdown active">
-                      <h5 class="nav-dropdown">Tips Kesehatan</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
                           <article>
                             <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
                             </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
                           </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-2.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-3.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-4.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Informasi Kesehatan</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-5.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-6.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-8.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Pola Hidup</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-10.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-9.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-8.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Penyakit</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-4.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-3.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-12.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="row-dropdown">
-                      <h5 class="nav-dropdown">Kesehatan Dunia</h5>
-                      <div class="group-news">
-                        <div class="row-group-news">
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-14.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-5.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                          <article>
-                            <figure>
-                              <img src="images/big-thumb/big-thumb-7.jpg" alt="" />
-                            </figure>
-                            <figcaption>
-                              <a href="#"><h5>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h5></a>
-                            </figcaption>
-                          </article>
-                        </div>
-                        <a href="#" class="more-news">more news &nbsp<i class="fa fa-long-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </section>
-                  <!-- end of dropdown -->
 
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Tips Kesehatan</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Prestasi</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                          
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Konsultasi</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Pola Hidup</a>
+                      <div class="content">
+                        <div class="row-content">
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-1.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-4.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-2.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+
+                          <article>
+                            <figure>
+                              <img src="images/top-group-news/tp-news-3.jpg" />
+                              <figcaption>
+                                <a href="#">Lorem Ipsum dolor Sit Amet Consectetu Adipisicing Elit</a>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </div>
+                        <a href="#" class="more">berita lainnya <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </li>
+                  </ul>
                 </li>
-                <li><a href="#">Tips & Trik</a></li>
                 <li><a href="#">Otomotif</a></li>
                 <li><a href="#">Pariwisata</a></li>
                 <li><a href="#">Olahraga</a></li>
@@ -513,16 +537,16 @@
 
       <!-- headline -->
       <section class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 hidden-xs">
           <div class="headline">
             <div class="title">HEADLINE</div>
             <div class="body-caption">
               <div class="row-caption">
-                <a href="#" class="caption">7 Poster Iklan Pokemon GO Paling Keren Karya Justin Luu</a>
-                <a href="#" class="caption">Cara Mudah Copy Paste Postingan Instagram di Android</a>
-                <a href="#" class="caption">5 Cara Hemat Baterai Smartphone Saat Bermain Pokemon Go</a>
-                <a href="#" class="caption">Cara Skip Iklan di YouTube Android Secara Otomatis Tanpa Root</a>
-                <a href="#" class="caption">6 Fungsi Kamera Smartphone yang Mungkin Jarang Kamu Gunakan</a>
+                <a href="#" class="caption">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</a>
+                <a href="#" class="caption">pro ne audiam voluptatum concludaturque. Vel dolor adipisci eu</a>
+                <a href="#" class="caption">accusam reprehendunt ius ad. Illud dolore pertinacia at vis</a>
+                <a href="#" class="caption">Nec omnis vulputate neglegentur et, has putent tibique signif</a>
+                <a href="#" class="caption">Eu iudico platonem vis, nam dicit officiis forensibus et</a>
               </div>
             </div>
             <div class="control">
@@ -535,119 +559,124 @@
       <!-- end of headline -->
 
       <div class="row">
-        <div class="col-md-12 top-news">
+        <div class="col-md-12 col-sm-12 col-xs-12 top-news">
 
           <!-- slider -->
           <section class="slider">
             <div class="row-slider">
-              <article>
+              <article class="content">
+                <div class="category-thumb">kesehatan</div>
                 <figure>
-                  <img src="images/slider/img-slider-1.jpg" alt="" />
+                  <img src="images/slider/img-slider-1.jpg" />
                   <figcaption>
-                    <div class="category">GAYA HIDUP</div>
-                    <a href="#"><h3 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h3></a>
+                    <a href="#">Lorem ipsum dolor sit amet, an nec adhuc suscipiantur, essent accusam te usu</a>
                   </figcaption>
                 </figure>
               </article>
-              <article>
+
+              <article class="content">
+                <div class="category-thumb">tips dan trik</div>
                 <figure>
-                  <img src="images/slider/img-slider-2.jpg" alt="" />
+                  <img src="images/slider/img-slider-2.jpg" />
                   <figcaption>
-                    <div class="category">GADGET</div>
-                    <a href="#"><h3 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h3></a>
+                    <a href="#">pro ne audiam voluptatum concludaturque. Vel dolor adipisci eu</a>
                   </figcaption>
                 </figure>
               </article>
-              <article>
+
+              <article class="content">
+                <div class="category-thumb">teknologi</div>
                 <figure>
-                  <img src="images/slider/img-slider-3.jpg" alt="" />
+                  <img src="images/slider/img-slider-3.jpg" />
                   <figcaption>
-                    <div class="category">STYLE</div>
-                    <a href="#"><h3 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h3></a>
+                    <a href="#">accusam reprehendunt ius ad. Illud dolore pertinacia at vis, te sit fabellas adipisci</a>
                   </figcaption>
                 </figure>
               </article>
-              <article>
+              
+              <article class="content">
+                <div class="category-thumb">olahraga</div>
                 <figure>
-                  <img src="images/slider/img-slider-4.jpg" alt="" />
+                  <img src="images/slider/img-slider-4.jpg" />
                   <figcaption>
-                    <div class="category">WISATA</div>
-                    <a href="#"><h3 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h3></a>
+                    <a href="#">Nec omnis vulputate neglegentur et, has putent tibique signiferumque ex</a>
                   </figcaption>
                 </figure>
               </article>
-              <article>
+
+              <article class="content">
+                <div class="category-thumb">otomotif</div>
                 <figure>
-                  <img src="images/slider/img-slider-5.jpg" alt="" />
+                  <img src="images/slider/img-slider-5.jpg" />
                   <figcaption>
-                    <div class="category">TEKNOLOGI</div>
-                    <a href="#"><h3 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h3></a>
+                    <a href="#">Eu iudico platonem vis, nam dicit officiis forensibus et. Qui at quod habemus</a>
                   </figcaption>
                 </figure>
               </article>
             </div>
             <div class="control">
-              <div class="nav-left">
-                <i class="fa fa-angle-left"></i>
-              </div>
-              <div class="nav-right">
-                <i class="fa fa-angle-right"></i>
-              </div>
+              <div class="left"><i class="fa fa-angle-left"></i></div>
+              <div class="right"><i class="fa fa-angle-right"></i></div>
             </div>
           </section>
           <!-- end of slider -->
 
           <!-- top group news -->
           <section class="top-group-news">
-            <article>
+            <article class="content">
+              <div class="category-thumb">gaya hidup</div>
               <figure>
-                <img src="images/top-group-news/tp-news-1.jpg" alt="" />
+                <img src="images/top-group-news/tp-news-1.jpg" />
                 <figcaption>
-                  <div class="category">GAYA HIDUP</div>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h4></a>
+                  <a href="#">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</a>
                 </figcaption>
               </figure>
             </article>
-            <article>
+
+            <article class="content">
+              <div class="category-thumb">pets</div>
               <figure>
-                <img src="images/top-group-news/tp-news-2.jpg" alt="" />
+                <img src="images/top-group-news/tp-news-2.jpg" />
                 <figcaption>
-                  <div class="category">PET</div>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h4></a>
+                  <a href="#">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</a>
                 </figcaption>
               </figure>
             </article>
-            <article>
+
+            <article class="content">
+              <div class="category-thumb">otomotif</div>
               <figure>
-                <img src="images/top-group-news/tp-news-3.jpg" alt="" />
+                <img src="images/top-group-news/tp-news-3.jpg" />
                 <figcaption>
-                  <div class="category">OTOMOTIF</div>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h4></a>
+                  <a href="#">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</a>
                 </figcaption>
               </figure>
             </article>
-            <article>
+
+            <article class="content">
+              <div class="category-thumb">teknologi</div>
               <figure>
-                <img src="images/top-group-news/tp-news-4.jpg" alt="" />
+                <img src="images/top-group-news/tp-news-4.jpg" />
                 <figcaption>
-                  <div class="category">TEKNOLOGI</div>
-                  <a href="#"><h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h4></a>
+                  <a href="#">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</a>
                 </figcaption>
               </figure>
-            </artilce>
+            </article>
           </section>
           <!-- end of top group news -->
 
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-12 col-xs-12">
           <div class="row">
-            <section class="col-md-12">
+            <section class="col-md-12 col-sm-12 col-xs-12">
+
+              <!-- tab news -->
               <div class="tab-news">
                 <section class="active">
                   <h4 class="nav">TERBARU</h4>
                   <div class="row-content">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6 col-xs-12 left">
                         <article class="big-news mb-lg">
                           <figure>
                             <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
@@ -699,7 +728,7 @@
                           </article>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6 col-xs-12 right">
                         <article class="big-news mb-lg">
                           <figure>
                             <img src="images/big-thumb/big-thumb-5.jpg" alt="" />
@@ -757,7 +786,7 @@
                 <section>
                   <h4 class="nav">POPULER</h4>
                   <div class="row row-content">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12 left">
                       <article class="big-news mb-lg">
                         <figure>
                           <img src="images/big-thumb/big-thumb-9.jpg" alt="" />
@@ -809,7 +838,7 @@
                         </article>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12 right">
                       <article class="big-news mb-lg">
                         <figure>
                           <img src="images/big-thumb/big-thumb-2.jpg" alt="" />
@@ -866,7 +895,7 @@
                 <section>
                   <h4 class="nav">SERING DIBACA</h4>
                   <div class="row row-content">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12 left">
                       <article class="big-news mb-lg">
                         <figure>
                           <img src="images/big-thumb/big-thumb-6.jpg" alt="" />
@@ -918,7 +947,7 @@
                         </article>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12 right">
                       <article class="big-news mb-lg">
                         <figure>
                           <img src="images/big-thumb/big-thumb-15.jpg" alt="" />
@@ -973,8 +1002,10 @@
                   </div>
                 </section>
               </div>
+              <!-- end of tab news -->
+
             </section>
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 hidden-xs">
               <div class="ads-rect">
                 <figure>
                   <a href="#">
@@ -983,12 +1014,12 @@
                 </figure>
               </div>
             </div>
-            <section class="col-md-12 mb-xl">
+            <section class="col-md-12 col-sm-12 col-xs-12 mb-xl">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                   <h4 class="title-section">KATEGORI BERITA 1</h4>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
@@ -1005,7 +1036,7 @@
                     </figure>
                   </article>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="small-article">
                     <article>
                       <figure>
@@ -1059,12 +1090,12 @@
                 </div>
               </div>
             </section>
-            <section class="col-md-12 mb-xl">
+            <section class="col-md-12 col-sm-12 col-xs-12 mb-xl">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                   <h4 class="title-section">KATEGORI BERITA 2</h4>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-8.jpg" alt="" />
@@ -1081,7 +1112,7 @@
                     </figure>
                   </article>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="small-article">
                     <article>
                       <figure>
@@ -1135,12 +1166,12 @@
                 </div>
               </div>
             </section>
-            <section class="col-md-12">
+            <section class="col-md-12 col-sm-12 col-xs-12">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                   <h4 class="title-section">KATEGORI BERITA 3</h4>
                 </div>
-                <div class="col-md-6 mb-lg">
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-lg">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-1.jpg" alt="" />
@@ -1154,7 +1185,7 @@
                     </figure>
                   </article>
                 </div>
-                <div class="col-md-6 mb-lg">
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-lg">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-2.jpg" alt="" />
@@ -1168,7 +1199,7 @@
                     </figure>
                   </article>
                 </div>
-                <div class="col-md-6 mb-lg">
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-lg">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-3.jpg" alt="" />
@@ -1182,7 +1213,7 @@
                     </figure>
                   </article>
                 </div>
-                <div class="col-md-6 mb-lg">
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-lg">
                   <article class="big-news">
                     <figure>
                       <img src="images/big-thumb/big-thumb-4.jpg" alt="" />
@@ -1200,7 +1231,7 @@
             </section>
           </div>
         </div>
-        <div class="col-md-4" style="padding-left:30px;">
+        <div class="col-md-4 col-sm-12 col-xs-12" style="padding-left:30px;">
           <div class="ads-square mb-xl">
             <figure>
               <a href="#">
@@ -1469,6 +1500,8 @@
   <!-- main js -->
   <script src="js/script.js"></script>
 
+  <script src="js/megamenu.js"></script>
+
   <!-- headline.js -->
   <script src="js/headline.js"></script>
 
@@ -1477,8 +1510,5 @@
 
   <!-- tab news -->
   <script src="js/tab-news.js"></script>
-
-  <!-- mega menu -->
-  <script src="js/megamenu.js"></script>
 
 </html>

@@ -8,4 +8,5 @@ $(document).ready(function(){
   $(".login .close-button").click(function(){
     $(this).parents(".login").removeClass("active");
   });
+
 });

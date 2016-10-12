@@ -1,0 +1,116 @@
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 991px){
+  /*megamenu*/
+  nav.main-navigation ul > li.megamenu > ul{
+    margin-top: 15px;
+    top: auto;
+    padding-right: 0;
+    max-height: 500px;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul:before{
+    display: none;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li > a{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 0;
+    border-top: 1px solid #e9e9e9;
+    position: relative;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li.active > a:after{
+    display: none;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li > a:after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li.active > a:after{
+    content: " ";
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li > .content{ 
+    position: static;
+    width: 100%;
+    padding: 0 15px 15px 15px;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li.active > .content{
+
+  }
+  /*end of megamenu*/
+
+  /*slider*/
+  .slider{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*end of slider*/
+
+  /*top group news*/
+  .top-group-news{
+    width: 100%;
+  }
+  /*end of top group news*/
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+  /*slider*/
+  .slider{
+    width: 482px;
+    height: 292px;
+  }
+  /*end of slider*/
+
+  /*top group news*/
+  .top-group-news article{
+    width: 214px;
+    height: 139px;
+  }
+  /*end of top group news*/
+
+  /*ads rectangle*/
+  .ads-rect{
+    display: none !important;
+  }
+  /*end of ads rectangle*/
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+}
+
+@media (max-width: 767px){
+  /*megamenu*/
+  nav.main-navigation ul > li.megamenu > ul > li > .content > .row-content > article{
+    width: 48.88392%;
+    margin-bottom: 20px;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li > .content > .row-content > article:nth-child(3),
+  nav.main-navigation ul > li.megamenu > ul > li > .content > .row-content > article:nth-child(4){
+      margin-bottom: 0;
+  }
+
+  nav.main-navigation ul > li.megamenu > ul > li > .content > .row-content > article:nth-child(2){
+    margin-right: 0;
+  }
+  /*end of megamenu*/
+
+  /*tab news*/
+  .tab-news .row-content .right{
+    margin-top: 30px;
+  }
+  /*end of tab news*/
+}

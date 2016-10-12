@@ -1,22 +1,22 @@
 $(document).ready(function(){
 
-  $(".row-dropdown .nav-dropdown").click(function(){
-    $(".row-dropdown").removeClass("active");
-    $(this).parents(".row-dropdown").addClass("active");
-  });
+	//trigger main menu
+	$(".main-navigation ul > li.megamenu > a").click(function(e){
+		if($(this).parent().hasClass("active")){
+			$(".main-navigation ul > li.megamenu").removeClass("active");
+			$(this).parent().removeClass("active");
+		}else{
+			$(".main-navigation ul > li.megamenu").removeClass("active");
+			$(this).parent().addClass("active");
+		}
+		$(this).next().children("li:first-child").addClass("active");
+		e.preventDefault();
+	});
 
-  $(".main-navigation li .link-death").click(function(event){
-    if($(this).parents(".dropdown").hasClass("active")){
-      $(this).parents(".dropdown").removeClass("active");
-    }else{
-      $(".main-navigation li").removeClass("active");
-      $(this).parents(".dropdown").addClass("active");
-    }
-
-    var heightContent = $(".body-dropdown").find(".group-news").innerHeight();
-    $(".body-dropdown").css("height", heightContent + "px");
-
-    event.preventDefault();
-
-  });
+	//trigger child menu
+	$(".megamenu > ul > li > a").click(function(e){
+		$(".megamenu > ul > li").removeClass("active");
+		$(this).parent().addClass("active");
+		e.preventDefault();
+	});
 })

@@ -1,24 +1,35 @@
 $(document).ready(function(){
-  var countCaption = $(".row-caption").children(".caption").length;
-  var widthBodyCaption = (countCaption * 100);
+  var countCaption = $(".headline .caption").length;
+  var widthBodyCaption = countCaption * 100;
   var widthCaption = widthBodyCaption / countCaption / countCaption;
 
-  $(".body-caption").children(".row-caption").css("width", widthBodyCaption + "%");
-  $(".row-caption").children(".caption").css("width", widthCaption + "%");
+  $(".headline .row-caption").css({
+    width: widthBodyCaption + "%",
+    marginLeft: - 100 + "%"
+  });
+  $(".headline .caption").css("width", widthCaption + "%");
+
+  $(".headline .caption:last-child").prependTo(".row-caption");
 
   function moveLeft(){
-    $(".row-caption").animate({right: "+=100%"});
+    $(".headline .row-caption").animate({left: + 100 + "%"}, 400, function(){
+      $(".headline .caption:last-child").prependTo(".row-caption");
+      $(".headline .row-caption").css("left", 0);
+    });
   }
 
   function moveRight(){
-    $(".row-caption").animate({right: "-=100%"});
+    $(".headline .row-caption").animate({left: - 100 + "%"}, 400, function(){
+      $(".headline .caption:first-child").appendTo(".row-caption");
+      $(".headline .row-caption").css("left", 0);
+    });
   }
 
-  $(".fa-angle-down").click(function(){
+  $(".headline .fa-angle-up").click(function(){
     moveLeft();
   });
 
-  $(".fa-angle-up").click(function(){
+  $(".headline .fa-angle-down").click(function(){
     moveRight();
   });
 });
