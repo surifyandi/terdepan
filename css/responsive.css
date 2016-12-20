@@ -64,9 +64,26 @@
   }
   /*end of top group news*/
 
+  /*sidebar*/
+
   .sidebar{
     padding-left: 15px;
   }
+
+  /*end of sidebar*/
+
+  /*footer*/
+
+  footer .describe{
+    margin-bottom: 30px;
+  }
+
+  footer .related-link{
+    float: none;
+    margin-top: 20px;
+  }
+
+  /*end of footer*/
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -96,6 +113,15 @@
 }
 
 @media (max-width: 767px){
+  
+  /*header*/
+
+  header .socmed{
+    text-align: left;
+  }
+
+  /*end of header*/
+
   /*megamenu*/
   nav.main-navigation ul > li.megamenu > ul > li > .content > .row-content > article{
     width: 48.88392%;
@@ -130,6 +156,31 @@
     margin-left: 0;
   }
   /*end of list news*/
+
+  /*timeline news*/
+
+  .timeline-posting .list-timeline-posting .image-news-timeline{
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .timeline-posting .list-timeline-posting a h4,
+  .timeline-posting .list-timeline-posting p,
+  .timeline-posting .list-timeline-posting .meta{
+    margin-left: 0;
+  }
+
+  /*end of timeline news*/
+
+  /*footer*/
+
+  footer .socmed{
+    text-align: left;
+  }
+
+  /*end of footer*/
 }
 
 @media (max-width: 568px){
