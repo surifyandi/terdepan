@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	//trigger mobile nav button{
+	$(".mobile-nav-button span").click(function(){
+		$("nav.main-navigation > ul").toggleClass("active");
+	});
+
 	//trigger main menu
 	$(".main-navigation ul > li.megamenu > a").click(function(e){
 		if($(this).parent().hasClass("active")){
